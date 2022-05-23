@@ -8,6 +8,7 @@ public class MasapeApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(MasapeApplication.class, args);
+
 	}
 
 }
