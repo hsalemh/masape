@@ -7,7 +7,7 @@ public class Contient {
 	private Long id_produit;
 	public Contient() {
 		super();
-		// TODO Auto-generated constructor stub
+		
 	}
 	public int getQuantity() {
 		return quantity;
