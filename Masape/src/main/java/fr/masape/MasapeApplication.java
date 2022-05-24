@@ -1,32 +1,41 @@
 package fr.masape;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+import fr.masape.dao.UserRepository;
 import fr.masape.entities.User;
 
 @SpringBootApplication
-public class MasapeApplication {
+public class MasapeApplication implements CommandLineRunner {
+	
+	@Autowired
+	UserRepository userRepo;
 
 	public static void main(String[] args) {
 		SpringApplication.run(MasapeApplication.class, args);
-
 		
-		User u = new User("SACKO", "Ismaila", "ismalsacko@yahoo.fr", "00 00 56 56 89", "Châtinay-Malabey");
-=======
+
 
 	}
 
-	private void Syso() {
+	@Override
+	public void run(String... args) throws Exception {
 		// TODO Auto-generated method stub
-		System.out.println("De la part de Diego");
-		System.err.println("bien recus");
-
-		User u = new User("SACKO", "Ismaila", "ismalsacko@yahoo.fr", "Châtinay-Malabey");
->>>>>>> branch 'master' of https://github.com/hsalemh/masape.git
+		User u1 = new User("SACKO", "Ismaila", "ismalsacko@yahoo.fr", "00 00 56 56 89", "Châtinay-Malabey");
+		User u2 = new User("HAMIANE", "Salem", "salem.hamiane@outlook.fr", "0777272727", "AUBERVILLIERS");
 		
-		System.out.println(u);
+		userRepo.save(u1);
+		userRepo.save(u2);
+		
+		userRepo.findAll().forEach(u ->  {
+			System.out.println(u.toString());
+		});
 	}
+
+
 
 	
 }

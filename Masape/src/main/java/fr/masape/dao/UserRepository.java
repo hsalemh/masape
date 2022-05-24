@@ -1,5 +1,9 @@
 package fr.masape.dao;
 
-public interface UserRepository{
+import org.springframework.data.repository.CrudRepository;
+
+import fr.masape.entities.User;
+
+public interface UserRepository extends CrudRepository <User, Long>{
 
 }

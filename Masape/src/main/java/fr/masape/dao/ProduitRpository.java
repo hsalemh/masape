@@ -1,5 +1,10 @@
-package fr.masape.dao;
+/*package fr.masape.dao;
 
-public interface ProduitRpository {
+import org.springframework.data.repository.CrudRepository;
+
+import fr.masape.entities.Produit;
+
+public interface ProduitRpository extends CrudRepository<Produit, Long> {
 
 }
+*/

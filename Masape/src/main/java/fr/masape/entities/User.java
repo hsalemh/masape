@@ -73,7 +73,7 @@ public class User {
 	 */
 	@Override
 	public String toString() {
-		return "Utilisateur n°[id=" + id + ", nom=" + nom + ", premon=" + premon + ", email=" + email +",tel = "+tel+", adresse=" + adresse
+		return "Utilisateur n°[nom=" + nom + ", premon=" + premon + ", email=" + email +",tel = "+tel+", adresse=" + adresse
 				+ "]";
 	}
 	
