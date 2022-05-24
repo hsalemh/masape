@@ -27,8 +27,8 @@ public class MasapeApplication implements CommandLineRunner {
 	@Override
 	public void run(String... args) throws Exception {
 		// TODO Auto-generated method stub
-		User u1 = new User("SACKO", "Ismaila", "ismalsacko@yahoo.fr", "00 00 56 56 89", "Châtinay-Malabey");
-		User u2 = new User("HAMIANE", "Salem", "salem.hamiane@outlook.fr", "0777272727", "AUBERVILLIERS");
+		User u1 = new User("SACKO", "Ismaila", "ismalsacko@yahoo.fr", "haha123", "00 00 56 56 89", "Châtinay-Malabey");
+		User u2 = new User("HAMIANE", "Salem", "salem.hamiane@outlook.fr", "haha123", "0777272727", "AUBERVILLIERS");
 
 //		Produit p = new Produit("Paton", 75.00);
 
