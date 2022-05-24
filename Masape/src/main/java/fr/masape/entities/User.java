@@ -11,6 +11,7 @@ public class User {
 	private String nom;
 	private String premon;
 	private String email;
+	private String tel;
 	private String adresse;
 	/**
 	 * Constructeur sans parametres
@@ -21,11 +22,12 @@ public class User {
 	/**
 	 * Constructeur avec parametres
 	 */
-	public User(String nom, String premon, String email, String adresse) {
+	public User(String nom, String premon, String email,String tel, String adresse) {
 		super();
 		this.nom = nom;
 		this.premon = premon;
 		this.email = email;
+		this.tel = tel;
 		this.adresse = adresse;
 	}
 	
@@ -50,6 +52,13 @@ public class User {
 	public void setEmail(String email) {
 		this.email = email;
 	}
+	
+	public String getTel() {
+		return tel;
+	}
+	public void setTel(String tel) {
+		this.tel = tel;
+	}
 	public String getAdresse() {
 		return adresse;
 	}
@@ -64,7 +73,7 @@ public class User {
 	 */
 	@Override
 	public String toString() {
-		return "Utilisateur n°[id=" + id + ", nom=" + nom + ", premon=" + premon + ", email=" + email + ", adresse=" + adresse
+		return "Utilisateur n°[id=" + id + ", nom=" + nom + ", premon=" + premon + ", email=" + email +",tel = "+tel+", adresse=" + adresse
 				+ "]";
 	}
 	

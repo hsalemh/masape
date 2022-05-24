@@ -10,15 +10,11 @@ public class MasapeApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(MasapeApplication.class, args);
-	}
-
-	private void Syso() {
-		// TODO Auto-generated method stub
-		System.out.println("De la part de Diego");
-		System.err.println("bien recus");
-
-		User u = new User("SACKO", "Ismaila", "ismalsacko@yahoo.fr", "Châtinay-Malabey");
+		
+		User u = new User("SACKO", "Ismaila", "ismalsacko@yahoo.fr", "00 00 56 56 89", "Châtinay-Malabey");
 		
 		System.out.println(u);
 	}
+
+	
 }
