@@ -18,6 +18,8 @@ public class Contient {
 	public Long getId_commande() {
 		return id_commande;
 	}
+	
+	
 	public void setId_commande(Long id_commande) {
 		this.id_commande = id_commande;
 	}
