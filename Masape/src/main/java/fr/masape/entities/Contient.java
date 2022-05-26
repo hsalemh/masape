@@ -1,34 +1,48 @@
 package fr.masape.entities;
 
-public class Contient {
+import java.util.Objects;
 
-	private int quantity;
-	private Long id_commande;
-	private Long id_produit;
+public class Contient {
+	int quantite;
+
 	public Contient() {
 		super();
-		
+		// TODO Auto-generated constructor stub
 	}
-	public int getQuantity() {
-		return quantity;
+
+	public Contient(int quantite) {
+		super();
+		this.quantite = quantite;
 	}
-	public void setQuantity(int quantity) {
-		this.quantity = quantity;
+
+	public int getQuantite() {
+		return quantite;
 	}
-	public Long getId_commande() {
-		return id_commande;
+
+	public void setQuantite(int quantite) {
+		this.quantite = quantite;
 	}
-	
-	
-	public void setId_commande(Long id_commande) {
-		this.id_commande = id_commande;
+
+	@Override
+	public int hashCode() {
+		return Objects.hash(quantite);
 	}
-	public Long getId_produit() {
-		return id_produit;
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Contient other = (Contient) obj;
+		return quantite == other.quantite;
 	}
-	public void setId_produit(Long id_produit) {
-		this.id_produit = id_produit;
+
+	@Override
+	public String toString() {
+		return "Contient [quantite=" + quantite + "]";
 	}
-	
 	
 }

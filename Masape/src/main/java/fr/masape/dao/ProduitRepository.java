@@ -4,6 +4,6 @@ import org.springframework.data.repository.CrudRepository;
 
 import fr.masape.entities.Produit;
 
-public interface ProduitRpository extends CrudRepository<Produit, Long> {
+public interface ProduitRepository extends CrudRepository<Produit, Long> {
 
 }

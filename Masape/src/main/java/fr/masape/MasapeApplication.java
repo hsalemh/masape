@@ -7,6 +7,8 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+import fr.masape.dao.CommandeRepository;
+import fr.masape.dao.ProduitRepository;
 import fr.masape.dao.UserRepository;
 
 import fr.masape.entities.Commande;
@@ -19,6 +21,8 @@ public class MasapeApplication implements CommandLineRunner {
 	
 	@Autowired
 	UserRepository userRepo;
+	CommandeRepository commandeRepo;
+	ProduitRepository produitRepo;
 
 	public static void main(String[] args) {
 		SpringApplication.run(MasapeApplication.class, args);
