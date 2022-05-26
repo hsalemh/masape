@@ -12,14 +12,16 @@ public class Produit {
 	private Long id_produit;
 	private String libele;
 	private double prixu;
+	private double qt;
 	public Produit() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
-	public Produit(String libele, double prixu) {
+	public Produit(String libele, double prixu, double qt) {
 		super();
 		this.libele = libele;
 		this.prixu = prixu;
+		this.qt = qt;
 	}
 	public Long getId_produit() {
 		return id_produit;
@@ -39,9 +41,15 @@ public class Produit {
 	public void setPrixu(double prixu) {
 		this.prixu = prixu;
 	}
+	public double getQt() {
+		return qt;
+	}
+	public void setQt(double qt) {
+		this.qt = qt;
+	}
 	@Override
 	public String toString() {
-		return "Produit [id_produit=" + id_produit + ", libele=" + libele + ", prixu=" + prixu + "]";
+		return "Produit [id_produit=" + id_produit + ", libele=" + libele + ", prixu=" + prixu + "€]";
 	}
 	@Override
 	public int hashCode() {
