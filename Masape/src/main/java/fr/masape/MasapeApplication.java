@@ -1,5 +1,7 @@
 package fr.masape;
 
+import java.util.Optional;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
@@ -27,18 +29,18 @@ public class MasapeApplication implements CommandLineRunner {
 	@Override
 	public void run(String... args) throws Exception {
 		// TODO Auto-generated method stub
-		User u1 = new User("SACKO", "Ismaila", "ismalsacko@yahoo.fr", "haha123", "00 00 56 56 89", "Châtinay-Malabey");
-		User u2 = new User("HAMIANE", "Salem", "salem.hamiane@outlook.fr", "haha123", "0777272727", "AUBERVILLIERS");
+		
+		
 
 //		Produit p = new Produit("Paton", 75.00);
 
-		userRepo.save(u1);
-		userRepo.save(u2);
+		//userRepo.save(u1);
+		//userRepo.save(u2);
 		
 		userRepo.findAll().forEach(u ->  {
 			System.out.println(u.toString());
 		});
-
+		
 
 	}
 

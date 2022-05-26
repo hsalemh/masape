@@ -23,7 +23,7 @@ public class User {
 	/**
 	 * Constructeur avec parametres
 	 */
-	public User(String nom, String premon, String email, String password, String tel, String adresse) {
+	public User( String nom, String premon, String email, String password, String tel, String adresse) {
 		super();
 		this.nom = nom;
 		this.premon = premon;
@@ -42,6 +42,9 @@ public class User {
 	public void setNom(String nom) {
 		this.nom = nom;
 	}
+	
+
+	
 	public String getPremon() {
 		return premon;
 	}
