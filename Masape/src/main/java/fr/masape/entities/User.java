@@ -80,6 +80,9 @@ public class User {
 	public Long getId() {
 		return id;
 	}
+	public void setId( Long id) {
+		this.id=id;
+	}
 	/**
 	 * La méthode toString qui permet d'afficher les informations ce cette entité
 	 */
