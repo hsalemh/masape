@@ -1,10 +1,14 @@
 package fr.masape.entities;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.Table;
+import javax.persistence.UniqueConstraint;
 
 @Entity
+@Table(uniqueConstraints={@UniqueConstraint(columnNames = {"email" , "tel"})})
 public class User {
 	@Id @GeneratedValue
 	private Long id;

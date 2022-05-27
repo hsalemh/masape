@@ -21,7 +21,9 @@ public class MasapeApplication implements CommandLineRunner {
 	
 	@Autowired
 	UserRepository userRepo;
+	@Autowired
 	CommandeRepository commandeRepo;
+	@Autowired
 	ProduitRepository produitRepo;
 
 	public static void main(String[] args) {

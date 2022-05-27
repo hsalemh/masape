@@ -1,19 +1,33 @@
 package fr.masape.entities;
 
 import java.sql.Date;
+import java.time.LocalDate;
 import java.util.Objects;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
 
+import org.springframework.format.annotation.DateTimeFormat;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@NoArgsConstructor
+@AllArgsConstructor
 @Entity
+@Data
 public class Commande {
 	@Id
 	@GeneratedValue
+	@DateTimeFormat
 	private Long id_commande;
 	private Date date;
 	private String adresse_liv;
+	@ManyToOne
+	private User user;
 
 	public Commande() {
 		super();
@@ -64,7 +78,7 @@ public class Commande {
 
 	@Override
 	public String toString() {
-		return "Commande [date=" + date + ", adresse_liv=" + adresse_liv + "]";
+		return "Commande [date=" + date + ", adresse_liv=" + adresse_liv + ", user" + user + "]";
 	}
 
 }
